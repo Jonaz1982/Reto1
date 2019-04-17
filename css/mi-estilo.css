@@ -1,4 +1,12 @@
 .card {
 	margin-bottom: 15px;
 	margin-top: 15px;
+	display: flex;
+}
+.card-title{
+	font-size: 1rem;
+	color: #b099ff;
+}
+.card-img-top{
+
 }
