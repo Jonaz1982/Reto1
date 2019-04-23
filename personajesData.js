@@ -8,14 +8,12 @@ fetch('https://rickandmortyapi.com/api/character')
 
         const row = document.querySelector('.row');
         const card = document.createElement('div');
-        card.innerHTML =`<div className="col-md-6 col-lg-4">
-          								<div class="card">
-          									<img class="card-img-top" src=${personaje.image} alt="Card image cap">
-          									<div class="card-body">
-          										<h5 class="card-title">${personaje.name}</h5>
-          									</div>
-          								</div>
-          							</div>`;
+        card.innerHTML =`<div className="card" style="padding: 1rem;">
+                            <img className="card-img-top" src=${personaje.image} alt="Card image cap">
+                            <div className="card-body">
+                              <p className="card-text">${personaje.name}</p>
+                            </div>
+                          </div>`;
         row.appendChild(card);
     });
   })
